@@ -1,0 +1,5 @@
+*.exe
+*.stackdump
+.vscode
+out.txt
+*.zip
