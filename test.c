@@ -2,8 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-
-
 // int main() {
 //     int number = 0;
 //     int age = 19;
@@ -21,15 +19,19 @@
 //     *ptr_age = 22;
 
 //     printf("Value of age: %d\n", age);
-    
+
 //     return EXIT_SUCCESS;
 // }
 
-int main() {
-    int n = 0;
-    for(unsigned int i = 1; i > 0; i++) {
-        n++;
-    }
-    printf("Done %d", n);
+char *memory[2];
+
+int main()
+{
+    memory[0] = "Hej";
+    memory[1] = "Världen";
+    printf("%s %s\n", memory[0], memory[1]);
+    memory[0] = "Hejsan";
+    printf("%s %s\n", memory[0], memory[1]);
+    getchar();
     return 0;
 }
